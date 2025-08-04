@@ -1,0 +1,500 @@
+/* Geral */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* HEADER */
+header {
+  height: 85vh;
+  background-image: url(./image/background.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.logo {
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+  padding: 4rem 2rem;
+}
+
+.conteudo img {
+  width: 800px;
+  height: auto;
+}
+
+.container-info {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.container-info h1 {
+  font-size: 2.5rem;
+  color: #7b490e;
+}
+
+.container-info p {
+  font-size: 1.56rem;
+  color: #3e3a39;
+  line-height: 1.5;
+}
+
+.container-info button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  width: 350px;
+  font-weight: bold;
+  background-color: #c73d27;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.container-info button:hover {
+  background-color: #a8321f;
+  transform: scale(1.03);
+}
+
+.borda img {
+  width: 100%;
+}
+
+/* FIRST SECTION */
+.first-section {
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+  align-items: center;
+  padding: 12rem 2rem;
+  flex-wrap: wrap;
+}
+
+.first-section-info {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.first-section-info h2 {
+  color: #7b490e;
+  font-size: 2.2rem;
+}
+
+.first-section-info p {
+  color: #3e3a39;
+  font-size: 1.56rem;
+}
+
+.first-section-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.first-section-div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.foto-mala-mundo {
+  width: 35%;
+  min-width: 300px;
+}
+
+/* SECOND SECTION */
+.second-section {
+  background-image: url(./image/fundo-background1.png);
+  background-color: #e7c9aa;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 14rem 2rem;
+}
+
+.second-section h2 {
+  font-size: 2rem;
+  color: #7b490e;
+}
+
+.second-section p {
+  font-size: 1.56rem;
+  color: #3e3a39;
+  margin: 1rem 0 2rem;
+}
+
+/* FOURTH SECTION */
+.fourth-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 8rem 2rem;
+}
+
+.fourth-section::before {
+  content: "";
+  background-image: url("./image/logoPartjar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 600px;
+  opacity: 0.05;
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.fourth-section-card {
+  background-color: #e8c7a3;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  width: 285px;
+  height: 370px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.fourth-section-card h2 {
+  font-size: 1.5rem;
+  color: #7b490e;
+}
+
+.fourth-section-card p {
+  font-size: 1.2rem;
+  color: #3e3a39;
+}
+
+.fourth-section-card img {
+  width: 8rem;
+}
+
+/* FIFTH SECTION */
+.fifth-section {
+  padding-bottom: 4rem;
+}
+
+.titulo-fifth-section {
+  background-color: #74410d;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 17px 80px;
+  clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+  margin: 0 auto 2rem;
+  display: inline-block;
+}
+
+.fifth-section-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 2rem;
+}
+
+.first-section::before {
+  content: "";
+  background-image: url("./image/logoPartjar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 600px;
+  opacity: 0.05;
+  position: absolute;
+  top: 210%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.fifth-section-card {
+  position: relative;
+  width: 280px;
+  height: auto;
+  text-align: center;
+}
+
+.fifth-section-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* ajuste a opacidade aqui */
+  pointer-events: none; /* para não interferir em cliques */
+  z-index: 0;
+}
+
+/* Imagem fica atrás do overlay */
+.fifth-section-container img {
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.fifth-section-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.fifth-section-container h2 {
+  display: flex;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+
+.fifth-section-card:nth-child(even) {
+  transform: translateY(30px);
+}
+
+.fifth-section-card:nth-child(odd) h2 {
+  top: 16px;
+  bottom: auto;
+}
+
+/* Títulos dos cards pares: base */
+.fifth-section-card:nth-child(even) h2 {
+  bottom: 16px;
+  top: auto;
+}
+
+/* SIXTH SECTION */
+.sixth-section {
+  position: relative;
+  padding: 15rem 2rem;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.sixth-section * {
+  position: relative;
+  z-index: 1;
+}
+
+.sixth-section::before {
+  content: "";
+  background-image: url("./image/logoPartjar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 600px;
+  opacity: 0.05;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.sixth-section h2 {
+  font-size: 2.2rem;
+  color: #7b490e;
+  margin-bottom: 1rem;
+}
+
+.sixth-section p {
+  font-size: 1.56rem;
+  color: #3e3a39;
+}
+
+/* FOOTER */
+footer {
+  background-color: #e9ceb2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.first-div-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 3rem;
+}
+
+.first-div-footer div {
+  max-width: 500px;
+}
+
+.first-div-footer h2 {
+  font-size: 1.5rem;
+  color: #7b490e;
+}
+
+.first-div-footer p {
+  font-size: 1.3rem;
+  color: #3e3a39;
+  margin: 1rem 0;
+}
+
+.first-div-footer img {
+  width: 160px;
+}
+
+.second-div-footer {
+  background-color: #7b490e;
+  padding: 0.9rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+/* BOTÃO PADRÃO */
+.botao {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #c73d27;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao:hover {
+  background-color: #a8321f;
+  transform: scale(1.03);
+}
+
+/* RESPONSIVO */
+@media (max-width: 992px) {
+  .conteudo {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .container-info {
+    padding: 0;
+    align-items: center;
+  }
+
+  .container-info button {
+    width: 100%;
+  }
+
+  .first-div-footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    gap: 2rem;
+  }
+
+  .first-section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .foto-mala-mundo {
+    width: 80%;
+  }
+
+  /* SECOND SECTION */
+  .second-section {
+    padding: 12rem 2rem;
+  }
+
+  .second-section h2 {
+    font-size: 2rem;
+  }
+
+  .second-section p {
+    font-size: 1.4rem;
+  }
+
+  .sixth-section {
+    padding: 11rem 2rem;
+  }
+
+  .sixth-section h2 {
+    font-size: 2rem;
+  }
+
+  .sixth-section p {
+    font-size: 1.4rem;
+  }
+
+  .sixth-section::before {
+    background-size: 450px;
+  }
+
+  .fifth-section-card:nth-child(even) {
+    transform: translateY(0px);
+  }
+
+  /* Títulos dos cards pares: base */
+  .fifth-section-card:nth-child(even) h2 {
+    bottom: 16px;
+    top: 4%;
+  }
+
+  .second-div-footer {
+    padding: 0.9rem;
+    font-size: 0.8rem;
+    color: #ffffff;
+  }
+
+  .second-div-footer h2 {
+    font-size: 0.8rem;
+  }
+
+  .botao {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+  }
+}
