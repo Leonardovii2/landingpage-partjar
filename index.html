@@ -28,8 +28,19 @@
 
         <img src="./image/img1.png" alt="Pessoa pronta para viajar com mala" />
       </section>
+
       <div class="borda">
-        <img src="./image/retangulo-borda.png" alt="" />
+        <picture>
+          <source
+            srcset="./image/bordar-mobile.png"
+            media="(max-width: 768px)"
+          />
+          <img
+            class="borda"
+            src="./image/retangulo-borda.png"
+            alt="Descrição da imagem"
+          />
+        </picture>
       </div>
     </header>
 
