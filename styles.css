@@ -31,7 +31,7 @@ header {
 .logo {
   position: absolute;
   top: 1%;
-  left: 50%;
+  left: 51%;
   transform: translateX(-50%);
   width: 150px;
 }
@@ -46,7 +46,7 @@ header {
 }
 
 .conteudo img {
-  width: 800px;
+  width: 700px;
   height: auto;
 }
 
@@ -58,12 +58,12 @@ header {
 }
 
 .container-info h1 {
-  font-size: 2.5rem;
+  font-size: 35px;
   color: #7b490e;
 }
 
 .container-info p {
-  font-size: 1.56rem;
+  font-size: 20px;
   color: #3e3a39;
   line-height: 1.5;
 }
@@ -96,7 +96,7 @@ header {
   justify-content: center;
   gap: 15rem;
   align-items: center;
-  padding: 12rem 2rem;
+  padding: 10rem 2rem;
   flex-wrap: wrap;
 }
 
@@ -109,12 +109,12 @@ header {
 
 .first-section-info h2 {
   color: #7b490e;
-  font-size: 2.2rem;
+  font-size: 35px;
 }
 
 .first-section-info p {
   color: #3e3a39;
-  font-size: 1.56rem;
+  font-size: 20px;
 }
 
 .first-section-menu {
@@ -130,6 +130,10 @@ header {
   font-weight: bold;
 }
 
+.first-section-info img {
+  width: 1.4rem;
+}
+
 .foto-mala-mundo {
   width: 35%;
   min-width: 300px;
@@ -140,7 +144,7 @@ header {
   background-image: url("./image/logoPartjar.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 700px;
+  background-size: 500px;
   opacity: 0.05;
   position: absolute;
   top: 77%;
@@ -162,12 +166,12 @@ header {
 }
 
 .second-section h2 {
-  font-size: 2rem;
+  font-size: 35px;
   color: #7b490e;
 }
 
 .second-section p {
-  font-size: 1.56rem;
+  font-size: 20px;
   color: #3e3a39;
   margin: 1rem 0 2rem;
 }
@@ -178,7 +182,7 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  padding: 8rem 2rem;
+  padding: 8rem 0rem;
 }
 
 .fourth-section-card {
@@ -196,12 +200,12 @@ header {
 }
 
 .fourth-section-card h2 {
-  font-size: 1.5rem;
+  font-size: 22px;
   color: #7b490e;
 }
 
 .fourth-section-card p {
-  font-size: 1.2rem;
+  font-size: 18px;
   color: #3e3a39;
 }
 
@@ -219,7 +223,7 @@ header {
   background-color: #74410d;
   color: white;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 22px;
   padding: 17px 80px;
   clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
   margin: 0 auto 2rem;
@@ -318,7 +322,7 @@ header {
   background-image: url("./image/logoPartjar.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 700px;
+  background-size: 500px;
   opacity: 0.05;
   position: absolute;
   top: -5%;
@@ -329,13 +333,13 @@ header {
 }
 
 .sixth-section h2 {
-  font-size: 2.2rem;
+  font-size: 35px;
   color: #7b490e;
   margin-bottom: 1rem;
 }
 
 .sixth-section p {
-  font-size: 1.56rem;
+  font-size: 20px;
   color: #3e3a39;
 }
 
@@ -350,6 +354,7 @@ footer {
 .first-div-footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 5rem 3rem;
 }
 
@@ -358,18 +363,19 @@ footer {
 }
 
 .first-div-footer h2 {
-  font-size: 1.5rem;
+  font-size: 22px;
   color: #7b490e;
 }
 
 .first-div-footer p {
-  font-size: 1.3rem;
+  font-size: 18px;
   color: #3e3a39;
   margin: 1rem 0;
 }
 
 .first-div-footer img {
-  width: 160px;
+  width: 120px;
+  height: 120px;
 }
 
 .second-div-footer {
@@ -401,19 +407,25 @@ footer {
 /* RESPONSIVO */
 @media (max-width: 768px) {
   header {
-    height: 100vh;
-    padding: 0rem 0;
-    background-repeat: no-repeat; /* garante que não repita */
+    min-height: 100vh;
+    height: auto;
+    padding: 0;
   }
 
   .logo {
     width: 90px;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
   }
 
   .conteudo {
     gap: 1rem;
     padding: 7rem 2rem 4rem 2rem;
-    height: 98%;
+    height: auto;
+    flex-direction: column-reverse;
+    text-align: center;
   }
 
   .conteudo img {
@@ -421,10 +433,8 @@ footer {
   }
 
   .container-info {
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
     gap: 0.5rem;
+    padding: 0;
   }
 
   .container-info h1 {
@@ -433,26 +443,25 @@ footer {
   }
 
   .container-info p {
-    font-size: 17px;
+    font-size: 15px;
     text-align: left;
   }
 
   .container-info button {
     padding: 1rem 0rem;
     font-size: 18px;
+    width: 100%;
   }
 
-  .conteudo {
-    flex-direction: column-reverse;
+  .first-section {
+    gap: 2rem;
+    padding: 5rem 2rem;
+    flex-direction: column;
     text-align: center;
   }
 
-  .container-info {
-    padding: 0;
-  }
-
-  .container-info button {
-    width: 100%;
+  .first-section-info img {
+    width: 20px;
   }
 
   .first-section-info h2 {
@@ -460,16 +469,12 @@ footer {
   }
 
   .first-section-info p {
-    font-size: 17px;
-  }
-
-  .first-section-info img {
-    width: 1.4rem;
+    font-size: 14px;
   }
 
   .foto-mala-mundo {
-    width: 35%;
-    min-width: 350px;
+    width: 80%;
+    min-width: 300px;
   }
 
   .first-div-footer {
@@ -489,16 +494,7 @@ footer {
   }
 
   .first-div-footer p {
-    font-size: 17px;
-  }
-
-  .first-section {
-    gap: 2rem;
-    padding: 5rem 2rem;
-  }
-
-  .foto-mala-mundo {
-    width: 80%;
+    font-size: 15px;
   }
 
   /* SECOND SECTION */
@@ -512,7 +508,7 @@ footer {
   }
 
   .second-section p {
-    font-size: 17px;
+    font-size: 15px;
     text-align: left;
   }
 
@@ -523,12 +519,18 @@ footer {
     margin: 0 auto 2rem;
   }
 
+  .fourth-section-card,
+  .fifth-section-card {
+    width: 100%;
+    max-width: 280px;
+  }
+
   .fourth-section-card h2 {
     font-size: 25px;
   }
 
   .fourth-section-card p {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .fourth-section-card img {
@@ -539,7 +541,6 @@ footer {
     transform: translateY(0px);
   }
 
-  /* Títulos dos cards pares: base */
   .fifth-section-card:nth-child(even) h2 {
     bottom: 16px;
     top: 4%;
@@ -554,7 +555,7 @@ footer {
   }
 
   .sixth-section p {
-    font-size: 17px;
+    font-size: 15px;
   }
 
   .second-div-footer {
@@ -575,37 +576,37 @@ footer {
   .first-section::before {
     background-size: 700px;
     top: 120%;
-    left: 0;
   }
 
   .sixth-section::before {
     background-size: 400px;
-    top: -5%;
-    left: 0;
   }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
   header {
-    height: 90vh;
+    height: auto;
+    min-height: 40vh;
+    padding: 0rem 0;
   }
 
   .conteudo {
-    display: flex;
     flex-direction: column-reverse;
     gap: 2rem;
-    height: 102%;
-    padding: 8rem 2rem;
+    height: auto;
+    padding: 10rem 2rem 4rem 2rem;
+    text-align: center;
   }
 
   .conteudo img {
     width: 400px;
-    height: auto;
   }
 
   .first-section {
     gap: 2rem;
     padding: 5rem 2rem;
+    flex-direction: column;
+    text-align: center;
   }
 
   .foto-mala-mundo {
@@ -618,6 +619,34 @@ footer {
 
   .sixth-section::before {
     background-size: 500px;
+  }
+
+  .fifth-section-card:nth-child(even) {
+    transform: translateY(0px);
+  }
+
+  .container-info {
+    align-items: center;
+  }
+}
+
+/* EXTRA: Desktop maior que 1024px */
+@media (min-width: 1025px) {
+  .conteudo {
+    flex-direction: row;
+    gap: 2rem;
+    padding: 6rem 4rem;
+  }
+
+  .first-section {
+    flex-direction: row;
+    gap: 8rem;
+    padding: 8rem 4rem;
+  }
+
+  .fourth-section-card,
+  .fifth-section-card {
+    width: 285px;
   }
 
   .fifth-section-card:nth-child(even) {
