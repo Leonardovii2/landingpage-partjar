@@ -494,6 +494,10 @@ footer {
     min-width: 300px;
   }
 
+  .first-section-div p {
+    font-size: 14px;
+  }
+
   /* SECOND SECTION */
   .second-section {
     padding: 12rem 2rem;
@@ -510,28 +514,8 @@ footer {
   }
 
   .titulo-fifth-section {
-    font-size: 23px;
+    font-size: 20px;
     padding: 17px 30px;
-    clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
-    margin: 0 auto 2rem;
-  }
-
-  .fourth-section-card,
-  .fifth-section-card {
-    width: 100%;
-    max-width: 280px;
-  }
-
-  .fourth-section-card h2 {
-    font-size: 25px;
-  }
-
-  .fourth-section-card p {
-    font-size: 15px;
-  }
-
-  .fourth-section-card img {
-    width: 120px;
   }
 
   .fifth-section-card:nth-child(even) {
@@ -551,28 +535,17 @@ footer {
     font-size: 25px;
   }
 
-  .sixth-section p {
-    font-size: 17px;
-    text-align: justify;
-  }
-
-  .second-div-footer {
-    padding: 0.9rem;
-    font-size: 0.8rem;
-    color: #ffffff;
-  }
-
   .second-div-footer h2 {
     font-size: 11px;
   }
 
   .first-section::before {
-    background-size: 420px;
-    top: 90%;
+    background-size: 400px;
+    top: -20%;
   }
 
   .sixth-section::before {
-    background-size: 420px;
+    background-size: 400px;
   }
 
   .first-div-footer {
@@ -640,8 +613,13 @@ footer {
     padding: 8rem 6rem;
   }
 
+  .first-section::before {
+    background-size: 400px;
+    top: -27%;
+  }
+
   .sixth-section::before {
-    background-size: 500px;
+    background-size: 400px;
   }
 
   .fifth-section-card:nth-child(even) {
@@ -657,6 +635,16 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .fourth-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .fifth-section-container {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .fourth-section-card p {
@@ -681,6 +669,10 @@ footer {
 
   .first-div-footer p {
     text-align: justify;
+  }
+
+  .second-div-footer h2 {
+    font-size: 15px;
   }
 }
 
