@@ -17,77 +17,92 @@ img {
   display: block;
 }
 
-/* HEADER */
 header {
-  height: 85vh;
-  background-image: url(./image/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   position: relative;
-  padding: 2rem 0;
+  min-height: 70vh; /* altura mínima */
+  width: 100%;
+  overflow: hidden;
 }
 
-.logo {
+.sectionBackground {
   position: absolute;
-  top: 1%;
-  left: 51%;
-  transform: translateX(-50%);
-  width: 150px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../image/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
 }
 
 .conteudo {
+  position: relative; /* voltar a relative evita sumir */
+  height: auto;
+  width: 100%;
+  z-index: 2;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 2rem;
-  height: 100%;
-  padding: 4rem 2rem;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 0 15%;
 }
 
-.conteudo img {
-  width: 700px;
-  height: auto;
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+}
+
+.content img {
+  width: 35rem;
 }
 
 .container-info {
-  max-width: 600px;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
 .container-info h1 {
-  font-size: 35px;
+  font-size: 30px;
   color: #7b490e;
 }
 
 .container-info p {
-  font-size: 20px;
+  font-size: 16px;
   color: #3e3a39;
   line-height: 1.5;
 }
 
-.container-info button {
-  padding: 1rem 2rem;
-  font-size: 1rem;
-  width: 350px;
+.div-button button {
+  width: 16rem;
+  padding: 0.9rem 0;
   font-weight: bold;
+  font-size: 14px;
   background-color: #c73d27;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.container-info button:hover {
+.div-button button:hover {
   background-color: #a8321f;
   transform: scale(1.03);
 }
 
-.borda img {
+.borda {
   width: 100%;
+  height: 3rem;
+  background-color: #7b490e;
 }
 
 /* FIRST SECTION */
@@ -98,6 +113,8 @@ header {
   align-items: center;
   padding: 10rem 2rem;
   flex-wrap: wrap;
+
+  position: relative;
 }
 
 .first-section-info {
@@ -109,12 +126,13 @@ header {
 
 .first-section-info h2 {
   color: #7b490e;
-  font-size: 35px;
+  font-size: 30px;
 }
 
-.first-section-info p {
+.first-section-p {
   color: #3e3a39;
-  font-size: 20px;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 .first-section-menu {
@@ -144,10 +162,10 @@ header {
   background-image: url("./image/logoPartjar.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 500px;
-  opacity: 0.05;
+  background-size: 600px;
+  opacity: 0.08;
   position: absolute;
-  top: 77%;
+  top: -5%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -166,12 +184,12 @@ header {
 }
 
 .second-section h2 {
-  font-size: 35px;
+  font-size: 30px;
   color: #7b490e;
 }
 
 .second-section p {
-  font-size: 20px;
+  font-size: 16px;
   color: #3e3a39;
   margin: 1rem 0 2rem;
 }
@@ -189,8 +207,8 @@ header {
   background-color: #e8c7a3;
   border-radius: 0.5rem;
   padding: 2rem;
-  width: 285px;
-  height: 370px;
+  width: 230px;
+  height: 300px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -200,18 +218,19 @@ header {
 }
 
 .fourth-section-card h2 {
-  font-size: 22px;
+  font-size: 18px;
   color: #7b490e;
 }
 
 .fourth-section-card p {
-  font-size: 18px;
-  text-align: justify;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.2rem;
   color: #3e3a39;
 }
 
 .fourth-section-card img {
-  width: 8rem;
+  width: 7rem;
 }
 
 /* FIFTH SECTION */
@@ -241,9 +260,16 @@ header {
 
 .fifth-section-card {
   position: relative;
-  width: 280px;
-  height: auto;
+  width: 230px;
+  height: 300px;
   text-align: center;
+  border-radius: 0.5rem;
+}
+
+.fifth-section-card img {
+  width: 230px;
+  height: 300px;
+  border-radius: 0.5rem;
 }
 
 .fifth-section-card::before {
@@ -253,9 +279,10 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.3); /* ajuste a opacidade aqui */
-  pointer-events: none; /* para não interferir em cliques */
+  background: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
   z-index: 0;
+  border-radius: 0.5rem;
 }
 
 /* Imagem fica atrás do overlay */
@@ -282,7 +309,7 @@ header {
   left: 16px;
   color: white;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 16px;
   z-index: 1;
 }
 
@@ -323,10 +350,10 @@ header {
   background-image: url("./image/logoPartjar.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 500px;
+  background-size: 600px;
   opacity: 0.05;
   position: absolute;
-  top: -5%;
+  top: -10%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -334,15 +361,16 @@ header {
 }
 
 .sixth-section h2 {
-  font-size: 35px;
+  font-size: 32px;
   color: #7b490e;
   margin-bottom: 1rem;
 }
 
 .sixth-section p {
-  font-size: 20px;
+  font-size: 16px;
   text-align: justify;
   color: #3e3a39;
+  line-height: 1.5;
 }
 
 /* FOOTER */
@@ -370,7 +398,7 @@ footer {
 }
 
 .first-div-footer p {
-  font-size: 18px;
+  font-size: 16px;
   color: #3e3a39;
   margin: 1rem 0;
 }
@@ -390,13 +418,14 @@ footer {
 
 /* BOTÃO PADRÃO */
 .botao {
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
+  width: 16rem;
+  padding: 0.9rem 0;
   font-weight: bold;
+  font-size: 14px;
   background-color: #c73d27;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -408,31 +437,25 @@ footer {
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
-  header {
-    min-height: 100vh;
-    height: auto;
-    padding: 0;
-  }
-
   .logo {
-    width: 90px;
-    top: 1%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
+    width: 95px;
+    transform: translateX(95%);
   }
 
-  .conteudo {
+  header {
+    height: 42rem;
+  }
+
+  .content {
     gap: 1rem;
-    padding: 7rem 2rem 4rem 2rem;
     height: auto;
     flex-direction: column-reverse;
     text-align: center;
   }
 
-  .container-info {
-    gap: 1rem;
-    padding: 0;
+  .content img {
+    max-width: 100%;
+    height: auto;
   }
 
   .container-info h1 {
@@ -445,17 +468,11 @@ footer {
     text-align: left;
   }
 
-  .container-info button {
-    padding: 1rem 2rem;
-    font-size: 16px;
-    width: 100%;
-  }
-
   .first-section {
     gap: 2rem;
-    padding: 5rem 2rem;
     flex-direction: column;
     text-align: center;
+    padding: 2rem 2rem;
   }
 
   .first-section-info img {
@@ -549,11 +566,6 @@ footer {
     font-size: 11px;
   }
 
-  .botao {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-  }
-
   .first-section::before {
     background-size: 420px;
     top: 90%;
@@ -591,22 +603,26 @@ footer {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  header {
+  .content {
+    gap: 1rem;
     height: auto;
-    min-height: 40vh;
-    padding: 0rem 0;
-  }
-
-  .conteudo {
     flex-direction: column-reverse;
-    gap: 2rem;
-    height: auto;
-    padding: 10rem 2rem 4rem 2rem;
     text-align: center;
   }
 
-  .conteudo img {
-    width: 400px;
+  .content img {
+    max-width: 70%;
+    height: auto;
+  }
+
+  .container-info h1 {
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .container-info p {
+    font-size: 18px;
+    text-align: justify;
   }
 
   .first-section {
@@ -668,12 +684,31 @@ footer {
   }
 }
 
-/* EXTRA: Desktop maior que 1024px */
+/* /* /* /* EXTRA: Desktop maior que 1024px */
 @media (min-width: 1025px) {
-  .conteudo {
-    flex-direction: row;
-    gap: 2rem;
-    padding: 6rem 4rem;
+  .content img {
+    max-width: 50%;
+    height: auto;
+  }
+
+  .container-info h1 {
+    font-size: 25px;
+    text-align: left;
+  }
+
+  .container-info p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .div-button button {
+    width: 16rem;
+    padding: 0.8rem 0;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #c73d27;
+    color: white;
+    border: none;
   }
 
   .first-section {
@@ -682,12 +717,13 @@ footer {
     padding: 8rem 4rem;
   }
 
-  .fourth-section-card,
-  .fifth-section-card {
-    width: 285px;
+  .first-section::before {
+    background-size: 400px;
+    top: -3%;
   }
 
-  .fifth-section-card:nth-child(even) {
-    transform: translateY(0px);
+  .sixth-section::before {
+    background-size: 400px;
+    top: -3%;
   }
 }
